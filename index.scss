@@ -1,0 +1,60 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0077cc;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #f4f4f9;
+}
+
+div {
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#home {
+  background: #f4f4f9;
+}
+
+#about {
+  background: #eaeaea;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+}

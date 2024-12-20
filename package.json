@@ -1,0 +1,19 @@
+{
+  "name": "d2dinterior",
+  "version": "1.0.0",
+  "description": "Web page for d2dinteriors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijay9711/D2D-Interior.git"
+  },
+  "author": "Vijay Manoharan & Venkatraman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijay9711/D2D-Interior/issues"
+  },
+  "homepage": "https://github.com/vijay9711/D2D-Interior#readme"
+}
