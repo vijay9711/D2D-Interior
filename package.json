@@ -4,6 +4,7 @@
   "description": "Web page for d2dinteriors",
   "main": "index.js",
   "scripts": {
+    
     "build:css":"npx tailwindcss -i ./index.css -o ./tailwind_style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
