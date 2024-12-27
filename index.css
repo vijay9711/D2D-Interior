@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* General Styles */
 * {
@@ -9,11 +7,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
 }
 
 nav {
@@ -58,9 +55,13 @@ footer {
   color: #fff;
 }
 
-
-
 .home-wrapper{
   width: 100vw;
   height: 100vh;
+  display: flex;
+}
+.about-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
