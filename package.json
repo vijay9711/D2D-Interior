@@ -4,7 +4,7 @@
   "description": "Web page for d2dinteriors",
   "main": "index.js",
   "scripts": {
-    "build:css":"npx tailwindcss -i ./index.css -o ./tailwind_style.css --watch",
+    "build:css": "npx tailwindcss -i ./index.css -o ./tailwind_style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +18,7 @@
   },
   "homepage": "https://d2d-interior.vercel.app/#home",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17"
+    "autoprefixer": "^10.4.20"
   },
   "keywords": []
 }
