@@ -55,11 +55,27 @@ footer {
   color: #fff;
 }
 
+/* home section */
 .home-wrapper{
   width: 100vw;
   height: 100vh;
   display: flex;
 }
+
+.home-bg{
+  background-image: url('./assets/HomeBg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+
+
+
+
 .about-wrapper{
   width: 100vw;
   height: 100vh;
