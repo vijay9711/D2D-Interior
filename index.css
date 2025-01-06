@@ -94,7 +94,7 @@ footer {
   padding: 1vw;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 35%;
+  width: 60%;
   font-size: 1vw;
 
   position: absolute;
@@ -143,40 +143,51 @@ footer {
   font-size: 1.6vw;
   width: 20%;
   padding: 1rem;
-  border-radius: 10px;
+  /* border-radius: 10px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur( 0.2rem );
-  -webkit-backdrop-filter: blur( .1rem );
+  -webkit-backdrop-filter: blur( .1rem ); */
 
-  position: absolute;
+  /* position: absolute;
   right: 4em;
-  bottom: 10em;
+  bottom: 10em; */
   z-index: 1;
 }
 .home-bg   .location-content .location-icon{
-  width: 3.4vw;
+  width: 4vw;
 }
 
+.home-bg .v-divider{
+  border-left: 1px solid black;
+  /* height: 100%; */
+}
 
+.location-content .loc-icon-place{
+  position: relative;
+  margin-top: 20px;
+}
 .anim-text {
+  /* position: absolute; */
   overflow: hidden;
 }
 
-.anim-text   .line{
+
+.anim-text .line{
   position: absolute;
-  top: 75px;
-  left: 0px;
-  right: 0;
-  bottom: 0;
+  top: 0px;
+  left: -10px;
+  right: 0px;
+  bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   opacity: 0;
-  font-size: 1.7vw;
+  font-size: 3vw;
+  height: fit-content;
 }
-.anim-text   .line:nth-child(1) {
-  left: 30px;
+.anim-text .line:nth-child(1) {
+  left: 60px;
 }
 
 .anim-text h1,
@@ -195,3 +206,64 @@ footer {
 
 
 
+
+
+
+
+
+
+/* media query */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-bg .main-content{
+    width: 80%;
+    position: relative;
+    font-size: 4vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3vw;
+  }
+  .home-bg .main-content span{
+    font-size: 8vw;
+  }
+  .home-bg .main-content .sub-main-content{
+    flex-direction: column;
+  }
+  .home-bg .main-content .sub-main-content > div{
+    width: 100% !important;
+  }
+  .home-bg   .home-overlay-img{
+    display: none;
+  }
+  .home-bg{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .main-content .location-content{
+    font-size: 10vw;
+    padding: 0px;
+    font-weight: bold;
+  }
+  /* .main-content .line{
+    font-size: 8vw;
+  } */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}

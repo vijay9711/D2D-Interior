@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.fromTo(".main-content", { opacity: 0 }, { opacity: 1, duration: 2, ease: "power2.out" })
 
 
-  const ease = "bounce.out";
+  const ease = "power2.out";
   if (document.querySelector(".anim-text")) {
     var tl2 = gsap.timeline({
       repeat: -1,
