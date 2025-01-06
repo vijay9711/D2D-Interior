@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log("js loaded")
-  const mainContent = document.getElementById("main-content");
+  // const mainContent = document.getElementById("main-content");
 
-  gsap.timeline(mainContent, { opacity: 0, y: -90 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+  gsap.fromTo(".main-content", { opacity: 0 }, { opacity: 1, duration: 2, ease: "power2.out" })
 
 
   const ease = "bounce.out";
