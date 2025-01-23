@@ -1,11 +1,13 @@
+
 document.addEventListener('DOMContentLoaded', () => {
+  
   console.log("js loaded")
   // const mainContent = document.getElementById("main-content");
 
-  gsap.fromTo(".main-content", { opacity: 0 }, { opacity: 1, duration: 2, ease: "power2.out" })
+  gsap.fromTo(".main-content", { opacity: 0}, { opacity: 1, duration: 2, ease: "power2.out" })
+  gsap.registerPlugin(ScrollTrigger);
 
-
-  const ease = "power2.out";
+  const ease = "power2.inOut";
   if (document.querySelector(".anim-text")) {
     var tl2 = gsap.timeline({
       repeat: -1,
@@ -22,61 +24,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const parent = document.getElementById("anim-text");
 
     for (const child of parent.children) {
-      tl2.fromTo(child, { opacity: 0, y: -30, display: "none" }, { opacity: 1, y: 0, duration: .8, display: "flex", ease: ease })
-      tl2.fromTo(child, { opacity: 1, y: 0, display: "flex" }, { opacity: 0, y: 100, duration: 1, ease: ease, delay: 2 })
+      tl2.fromTo(child, { opacity: 0, x: -50, display: "none" }, { opacity: 1, x: 0, duration: .5, display: "flex", ease: ease })
+      tl2.fromTo(child, { opacity: 1, x: 0, display: "flex" }, { opacity: 0, x: 50, duration: .5, ease: ease, delay: 1.7 })
     }
 
 
 
-    // tl2.fromTo()
+    // service scroll animation
 
-    // tl2.fromTo(
-    //   ".anim-text h1",
-    //   { opacity: 0, y: -100, display:"none" },
-    //   { opacity: 1, y: 0, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h1",
-    //   { opacity: 1 },
-    //   { opacity: 1, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h1",
-    //   { opacity: 1, y: 0 },
-    //   { opacity: 0, y: 100, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h2",
-    //   { opacity: 0, y: -100 },
-    //   { opacity: 1, y: 0, duration: 1, ease: ease, display:"flex" },
-    //   "<0%"
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h2",
-    //   { opacity: 1 },
-    //   { opacity: 1, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h2",
-    //   { opacity: 1, y: 0 },
-    //   { opacity: 0, y: 100, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h3",
-    //   { opacity: 0, y: -100 },
-    //   { opacity: 1, y: 0, duration: 1, ease: ease, display:"flex" },
-    //   "<0%"
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h3",
-    //   { opacity: 1 },
-    //   { opacity: 1, duration: 1, ease: ease, display:"flex" }
-    // );
-    // tl2.fromTo(
-    //   ".anim-text h3",
-    //   { opacity: 1, y: 0 },
-    //   { opacity: 0, y: 100, duration: 1, ease: ease, display:"flex" }
-    // );
+
+    let sections = gsap.utils.toArray(".panel");
+
+    // gsap.to(sections, {
+    //   xPercent: -100 * (sections.length - 1),
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".h-container",
+    //     pin: true,
+    //     scrub: 1,
+    //     snap: 1 / (sections.length - 1),
+    //     end: () => "+=" + document.querySelector(".container").offsetWidth
+    //   }
+    // });
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: '.h-container',
+        pin: true,
+        scrub: 1,
+        end: "+=3500",
+        markers: true,
+      }
+    });
   }
 });
 

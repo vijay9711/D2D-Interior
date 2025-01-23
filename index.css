@@ -239,12 +239,51 @@ nav a {
 }
 
 
-.about-wrapper {
+.service-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow-y: scroll;
 }
 
+
+.h-container {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.red-bg{
+  background-color: red;
+}
+.orange-bg{
+  background-color: orange;
+}
+.panel{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: yellow;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+.panel{
+  width: 100vh;
+  height: 100vh;
+  /* background: #000; */
+}
 
 
 
