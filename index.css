@@ -239,56 +239,86 @@ nav a {
 }
 
 
-.service-wrapper {
+/* .service-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   overflow-y: scroll;
-}
+} */
 
 
 .h-container {
-  width: 400%;
-  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
+  height: 100vh;
+  width: 700%;
 }
+#service{
+  position: relative;
+  /* display: flex; */
+}
+.page-title{
+  position: sticky;
+  font-size: 5vw;
+  font-weight: bold;
 
-.red-bg{
-  background-color: red;
+  left: 1vw;
+  top: 3vw;
 }
-.orange-bg{
-  background-color: orange;
-}
-.panel{
+.panel {
+  /* flex: 1 0 100%; Each panel takes 100% of the viewport width */
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  text-align: center;
   align-items: center;
-}
-.firstContainer {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: yellow;
 }
 
-.lastContainer {
-  display: flex;
-  height: 100vh;
-  background: yellow;
-}
-.panel{
-  width: 100vh;
-  height: 100vh;
-  /* background: #000; */
+/* Unique background colors for each section */
+.red-bg {
+  background-color: red;
+  opacity: .5;
 }
 
+.orange-bg {
+  background-color: orange;
+  opacity: .5;
+}
+
+.purple-bg {
+  background-color: purple;
+  opacity: .5;
+}
+
+.green-bg {
+  background-color: green;
+  opacity: .5;
+}
+
+.blue-bg {
+  background-color: blue;
+  opacity: .5;
+}
+
+.yellow-bg {
+  background-color: yellow;
+  opacity: .5;
+  color: black; /* Adjust text color for contrast */
+}
+
+.pink-bg{
+  background-color: pink;
+  opacity: .5;
+  color: #000000;
+}
 
 
 
 
+#about{
+  width: 100vw;
+  height: 100vh;
+}
 
 
 
